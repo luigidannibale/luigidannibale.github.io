@@ -23,7 +23,7 @@ footer{width:270px;float:left;position:fixed;bottom:50px;-webkit-font-smoothing:
     width: 350px;
     text-align: left;
 }
-.section #knowledge table td .stars{
+.stars{
     width: 200px;
     text-align: right;
 }
