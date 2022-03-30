@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'New Tegomin', serif;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #DCF1F9;
+}
+.wrapper{
+    display: flex;
+    position: relative;
+}
+.wrapper .sidebar {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background: #155D7A;
+    padding: 25px 0;
+    display: block;
+}
+.wrapper .sidebar h2{
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.wrapper .sidebar h2 img{
+    height: 100px;
+    width: 100px;
+}
+.wrapper .sidebar ul li{
+    padding: 15px;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-bottom: 1px solid rgba(225,225,225,0.05);
+}
+.wrapper .sidebar ul li a, #log-benvenuto{
+    color: #EEF8FC;
+    display: block;
+}
+.wrapper .sidebar ul li a .fas{
+    width: 25px;
+}
+.wrapper .sidebar ul li:hover{
+    background: #1B769D;
+}
+.wrapper .sidebar ul li:hover a {
+    color: #fff;
+}
+#sidebar-footer{
+    display:flow-root;
+}
+.wrapper .maincontent {
+    width: 100%;
+    height: 100%;
+    margin-left: 200px;
+}
+.wrapper .maincontent .section{
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: flex-start;
+}
+.wrapper .maincontent .section #form-dati-anagrafici{
+    display: block;
+    justify-content: center;
+    width: 100%;
+}
+#password, #annulla-btn{
+    visibility: hidden;
+}
+#annulla-btn{
+    width: 85px;
+    background: rgb(255, 77, 77);
+    color: black;
+    border: rgb(128, 6, 6),1px solid;
+    margin-left: 15px;
+}
+.wrapper .maincontent .section .header{
+    width: 100%;
+    text-align: left;
+    background: rgb(134, 253, 208);
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #155D7A;
+    height: 50px;
+    padding-left: 15px;
+}
+.wrapper .maincontent .section ul{
+    position: relative;
+
+}
+.wrapper .maincontent .section li{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+}
+.wrapper .maincontent .section .input-btn{
+    border-radius: 10px;
+    margin: 20px;
+    margin-left: 50px;
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+    width: auto;
+    height: 50px;
+    color: #155D7A;
+    border: #1b7092,4px solid;
+}
+.wrapper .maincontent .section .input-box{
+    border-radius: 10px;
+    margin: 5px;
+    margin-left: 50px;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    width: 260px;
+    height: 40px;
+    color: #155D7A;    
+    border: solid 2px #1B769D;
+}
+.wrapper .maincontent .section .input-box:active{
+    border: solid 2px #3594bd;
+}
+
+#ambulatorio, #prestazione, #modifica-prenotazioni{
+    text-align-last: center;
+}
+#save-btn{
+    cursor: pointer;
+    background: #d1f3ff;
+}
+input:invalid+span:after {
+    position: absolute;
+    content: '✖';
+    color: red;
+    padding-left: 5px;
+  }
+  
+input:valid+span:after {
+    position: absolute;
+    content: '✓';
+    color: green;
+    padding-left: 5px;
+  }
+
+  table {
+    border-collapse: collapse;
+    min-width: 700px;
+    width: 70%;
+  }
+  
+  th,
+  td {
+    border: 1px solid black;
+  }
+  
+  th {
+    padding: 5px;
+    font-size: 18px;
+    color: #2196f3;
+    border-bottom: 3px solid black;
+  }
+  
+  td {
+    padding: 8px;
+    font-size: 16px;
+    color: #155D7A;
+  }
+ 
+  .dati{
+      text-align: center;
+  }
+  .dati:hover {
+    background-color: #95cce4;
+  }
+  
+  #canc {
+    border: 0px;
+    text-align: center;
+    background-color: #DCF1F9;
+  }
+  
+  #canc:hover {
+    background-color: #DCF1F9;
+  }
+  
+  .elim {
+    background-color: #DCF1F9;
+    border: 0px;
+    cursor: pointer;
+    text-decoration: underline;
+    color: red;
+    font-size: 16px;
+  }
