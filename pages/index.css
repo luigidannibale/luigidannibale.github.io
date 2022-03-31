@@ -35,6 +35,14 @@ section #knowledge table td{
     width: 13px;
     height: 13px;
 }
+.star{
+    width: 16px;
+    height: 16px;
+}
+.star :hover{
+    width: 18px;
+    height: 18px;
+}
 /*
 @import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
 
