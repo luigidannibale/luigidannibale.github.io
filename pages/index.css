@@ -28,6 +28,9 @@ section #knowledge table td{
     width: 450px;
     text-align: left;
 }
+#table-skills tr:hover{
+    
+}
 .stars{
     width: 100px;
 }
