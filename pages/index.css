@@ -31,6 +31,10 @@ section #knowledge table td{
 .stars{
     width: 100px;
 }
+.star ::before,::after{
+    width: 13px;
+    height: 13px;
+}
 /*
 @import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
 
