@@ -28,13 +28,17 @@ section #knowledge table td{
     width: 450px;
     text-align: left;
 }
-#table-skills tr:hover{
-    
-}
-#table-skills {
+
+ul#table-skills{
     list-style-type: none;
     margin: 0px;
     padding: 0px;
+}
+ul#table-skills li {
+    width: 400px;
+}
+ul#table-skills li {
+    width: 250px;
 }
 .stars{
     width: 100px;
@@ -46,42 +50,52 @@ section #knowledge table td{
 .star{
     width: 16px;
     height: 16px;
+    float: right;
 }
 .star:hover{
     width: 18px;
     height: 18px;
+    float: right;
 }
 .star2{
     width: 32px;
     height: 16px;
+    float: right;
 }
 .star2:hover{
     width: 36px;
     height: 18px;
+    float: right;
 }
 .star3{
     width: 48px;
     height: 16px;
+    float: right;
 }
 .star3:hover{
     width: 54px;
     height: 18px;
+    float: right;
 }
 .star4{
     width: 64px;
+    float: right;
     height: 16px;
 }
 .star4:hover{
     width: 72px;
     height: 18px;
+    float: right;
 }
 .star5{
     width: 80px;
+    float: right;
     height: 16px;
 }
 .star5:hover{
     width: 90px;
     height: 18px;
+    float: right;
 }
 /*
 @import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
