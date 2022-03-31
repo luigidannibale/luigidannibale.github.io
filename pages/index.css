@@ -31,7 +31,7 @@ section #knowledge table td{
 .stars{
     width: 100px;
 }
-.star ::before,::after{
+.star::before::after{
     width: 13px;
     height: 13px;
 }
@@ -39,7 +39,7 @@ section #knowledge table td{
     width: 16px;
     height: 16px;
 }
-.star :hover{
+.star:hover{
     width: 18px;
     height: 18px;
 }
