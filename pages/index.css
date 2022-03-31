@@ -29,15 +29,14 @@ section #knowledge table td{
     text-align: left;
 }
 
-ul#table-skills{
+
+#knowledge ul{
     list-style-type: none;
     margin: 0px;
     padding: 0px;
 }
-ul#table-skills li {
-    width: 400px;
-}
-ul#table-skills li {
+
+#knowledge ul li {
     width: 250px;
 }
 .stars{
