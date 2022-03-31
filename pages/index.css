@@ -37,10 +37,7 @@ section #knowledge table td{
 }
 
 #knowledge ul li {
-    width: 250px;
-}
-.stars{
-    width: 100px;
+    width: 300px;
 }
 .star::before::after{
     width: 13px;
