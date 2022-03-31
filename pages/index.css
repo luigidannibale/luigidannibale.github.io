@@ -31,6 +31,11 @@ section #knowledge table td{
 #table-skills tr:hover{
     
 }
+#table-skills {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
 .stars{
     width: 100px;
 }
