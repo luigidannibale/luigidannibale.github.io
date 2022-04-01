@@ -53,9 +53,14 @@ section #knowledge table td{
 }
 #education table tr td strong{
     font-size: 15px;
-    color: darkred;
 }
-
+#education table tr td .location{
+    color:darkred;
+    font-size: 13;
+}
+#education table tr td .date{
+    font-size: 12px;
+}
 #knowledge ul{
     display: grid;
     list-style-type: none;
