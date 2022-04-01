@@ -54,6 +54,9 @@ section #knowledge table td{
     width: 300px;
     height: 21px;
 }
+#knowledge ul li span{
+    position: absolute;
+}
 .star::before::after{
     width: 13px;
     height: 13px;
