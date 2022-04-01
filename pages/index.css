@@ -28,6 +28,17 @@ section #knowledge table td{
     width: 450px;
     text-align: left;
 }
+#table-about-me {
+    margin-top: 40px;
+    width: 100%;
+}
+#table-about-me #details{
+    width: 35%;
+    border-bottom: 0;
+}
+#table-about-me #about-me{
+    border-bottom: 0;
+}
 
 
 #knowledge ul{
