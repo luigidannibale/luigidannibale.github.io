@@ -44,7 +44,7 @@ section #knowledge table td{
 
 
 #knowledge ul{
-    display: list-item;
+    display: grid;
     list-style-type: none;
     margin: 0px;
     padding: 0px;
