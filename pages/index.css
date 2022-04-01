@@ -41,12 +41,19 @@ section #knowledge table td{
     border-bottom: 0;
     vertical-align: initial;
 }
+#education table{
+    font-size: 14px;
+}
 #education table tr{
     border: 0;
 }
 #education table tr td{
     vertical-align: initial;
     text-align: left;
+}
+#education table tr td strong{
+    font-size: 15px;
+    color: darkred;
 }
 
 #knowledge ul{
