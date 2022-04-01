@@ -35,9 +35,11 @@ section #knowledge table td{
 #table-about-me #details{
     width: 35%;
     border-bottom: 0;
+    vertical-align: initial;
 }
 #table-about-me #about-me{
     border-bottom: 0;
+    vertical-align: initial;
 }
 
 
