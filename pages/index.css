@@ -61,6 +61,9 @@ section #knowledge table td{
 #education table tr td .date{
     font-size: 13px;
 }
+#education table tr td .col1{
+    width: 35%;
+}
 #knowledge ul{
     display: grid;
     list-style-type: none;
