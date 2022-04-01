@@ -44,6 +44,7 @@ section #knowledge table td{
 
 
 #knowledge ul{
+    display: list-item;
     list-style-type: none;
     margin: 0px;
     padding: 0px;
@@ -51,6 +52,7 @@ section #knowledge table td{
 
 #knowledge ul li {
     width: 300px;
+    height: 21px;
 }
 .star::before::after{
     width: 13px;
@@ -60,51 +62,61 @@ section #knowledge table td{
     width: 16px;
     height: 16px;
     float: right;
+    padding-left: 236px;
 }
 .star:hover{
     width: 18px;
     height: 18px;
     float: right;
+    padding-left: 236px;
 }
 .star2{
     width: 32px;
     height: 16px;
     float: right;
+    padding-left: 236px;
 }
 .star2:hover{
     width: 36px;
     height: 18px;
     float: right;
+    padding-left: 236px;
 }
 .star3{
     width: 48px;
     height: 16px;
     float: right;
+    padding-left: 236px;
 }
 .star3:hover{
     width: 54px;
     height: 18px;
     float: right;
+    padding-left: 236px;
 }
 .star4{
     width: 64px;
     float: right;
     height: 16px;
+    padding-left: 236px;
 }
 .star4:hover{
     width: 72px;
     height: 18px;
     float: right;
+    padding-left: 236px;
 }
 .star5{
     width: 80px;
     float: right;
     height: 16px;
+    padding-left: 236px;
 }
 .star5:hover{
     width: 90px;
     height: 18px;
     float: right;
+    padding-left: 236px;
 }
 /*
 @import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
