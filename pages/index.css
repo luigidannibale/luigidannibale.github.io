@@ -55,8 +55,15 @@ section #knowledge table td{
     height: 21px;
 }
 #knowledge ul li span{
+    z-index: 0;
     position: absolute;
 }
+#knowledge ul li img{
+    float: right;
+    padding-left: 236px;
+    z-index: 1;
+}
+
 .star::before::after{
     width: 13px;
     height: 13px;
