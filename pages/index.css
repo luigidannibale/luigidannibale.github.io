@@ -45,7 +45,7 @@ section #knowledge table td{
     border: 0;
 }
 #education table tr td{
-    vertical-align: inherit;
+    vertical-align: initial;
     text-align: left;
 }
 
