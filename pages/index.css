@@ -61,7 +61,7 @@ section #knowledge table td{
 #knowledge ul li img{
     float: right;
     padding-left: 236px;
-    z-index: 1;
+    z-index: 9;
 }
 
 .star::before::after{
