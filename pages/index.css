@@ -42,6 +42,10 @@ section #knowledge table td{
     vertical-align: initial;
 }
 
+#education table tr td{
+    vertical-align: inherit;
+    text-align: left;
+}
 
 #knowledge ul{
     display: grid;
