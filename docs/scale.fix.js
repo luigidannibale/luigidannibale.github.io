@@ -1,4 +1,9 @@
-
+/*
+<!--
+  Website on Luigi D'annibale, developed by Luigi D'annibale, to advertise Luigi D'annibale.
+  Version 1.0, first developed in March/2021
+--> 
+*/
     var metas = document.getElementsByTagName('meta'),
         changeViewportContent = function(content) {
             for (var i = 0; i < metas.length; i++) {
