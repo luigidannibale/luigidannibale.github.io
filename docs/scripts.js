@@ -8,7 +8,7 @@ document.getElementById ("translate").addEventListener ("click", translate);
 //window.addEventListener("resize",onResize);
 
 function translate(){             
-    window.location.href = "https://luigidannibale.github.io/pages/english/pages" + window.location.pathname;      
+    window.location.href = "https://luigidannibale.github.io/pages/english/" + window.location.pathname;      
 }
 function onResize(){
     window.location.href = "https://luigidannibale.github.io/" + window.location.pathname;  
