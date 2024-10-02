@@ -2,6 +2,7 @@
   Website on Luigi D'annibale, developed by Luigi D'annibale, to advertise Luigi D'annibale.
   Version 1.0, first developed in March/2021
   Version 1.1, fixed problems on mobile layout, April/2/2022
+  Version 1.2, october 2024 update 
 -->
 <htnml>
     <head>
@@ -25,12 +26,11 @@
             "url":"https://luigidannibale.github.io/",
             "@type":"WebSite",
             "name":Luigi D'annibale",
-            "publisher":{"@type":"Organization",
             }
         </script>
         
     <!-- End Jekyll SEO tag -->
-        <link rel="stylesheet" href="./pages/index.css">
+        <link rel="stylesheet" href="./index.css">
         <script src="https://kit.fontawesome.com/46a4371c55.js" crossorigin="anonymous"></script>
         <!--[if lt IE 9]>
             <script src="https://kit.fontawesome.com/46a4371c55.js" crossorigin="anonymous"></script>
@@ -45,14 +45,21 @@
 
             <!--<p></p><p style="text-align:left">Dream big, achieve bigger</p><p></p>-->
              <ul class="downloads">
-              <li><a href="https://luigidannibale.github.io"><br>Home</a></li>
-              <li><a href="https://luigidannibale.github.io/pages/contacts.html"><br>Contatti</a></li>
+              <li><a href="" onclick="showSection('welcome')"><br>Home</a></li>
+              <li><a href="#contacts" onclick="showSection('contacts')"><br>Contatti</a></li>
               <li><a href="https://docs.google.com/document/d/1EaPq0nKpSG8BRaoHYY94DApZMsTBhDUpLWu2N3aHFWk/edit?usp=sharing"><br>Curriculum</a></li>
-            </ul> 
+            </ul>            
             <ul class="downloads" style="width: 180; margin: 25 0 5;">
-                <li><a href="https://luigidannibale.github.io/pages/abilities.html"><br>Competenze<!-- What & Why--></a></li>
-                <li style="display: contents;"><a href="https://luigidannibale.github.io/pages/education.html"><br>Istruzione<!--When & Where--></a></li>
+              <li><a href="#skills" onclick="showSection('skills')"><br>Competenze</a></li>
+              <li style="display: contents;"><a href="#education" onclick="showSection('education')"><br>Istruzione</a></li>
             </ul>
+            <!-- TO DO : da implementare la sezione nuovi progetti
+            <ul class="downloads">
+              <li><a href="#skills" onclick="showSection('skills')"><br>Competenze</a></li>
+              <li><a href="#education" onclick="showSection('education')"><br>Istruzione</a></li>
+              <li><a href="#projects" onclick="showSection('welcome')"><br>Progetti</a></li>
+            </ul>
+            -->
             <br><br>
             <ul class="downloads" style="width: 90; margin: 50 0 5">
               <li style="display: contents;"><a id="translate" ><br>English</a></li>                           
@@ -73,7 +80,8 @@
                   Welcome · Benvenuto · أهلا بك · ようこそ · Bienvenida · 欢迎 · ترحيب · Bienvenue · Chào mừng · 歓迎 · добро пожаловать · Willkommen · स्वागत · 환영 · 
                   Boas-vindas · kuwakaribisha to my web-page!
                   <br>
-                  Sono <strong>uno studente di informatica</strong> presso <strong>l'Università degli studi di Roma, La Sapienza</strong>      
+                  Sono uno studente del corso di laurea <strong> Informatica</strong> presso 
+                  l'Università La Sapienza di Roma.
 
                 </span>
                 <br>
@@ -87,7 +95,7 @@
                               <li><strong>Nome:</strong></li>
                               <li style="margin: 1px 0 6px;">Luigi D'annibale</li>                    
                               <li><strong>Età:</strong></li>
-                              <li style="margin: 1px 0 6px;">21</li>
+                              <li id="age" style="margin: 1px 0 6px;"></li>
                               <li><strong>Posizione:</strong></li>
                               <li style="margin: 1px 0 6px;">Aprilia (LT), Italy</li>
                             </ul>                            
@@ -110,10 +118,158 @@
             <p>
           </section>
 
-        
+          <section id="education" class="hidden">
+            <table style="width: 650px;">
+              <h1 style="color:maroon">Istruzione: </h1>
+              <blockquote>
+                <p>“Vivi come se dovessi morire domani. Impara come se dovessi vivere per sempre.”<br> ― Mahatma Gandhi</p>
+              </blockquote>
+              <tr>
+                <td class="col1"> 
+                  <strong>Università La Sapienza</strong> <br>
+                  <span class="date">Settembre 2021 - Presente</span>
+                </td>
+                <td class="col2">
+                  <strong>Laurea - Informatica</strong>
+                  <br>
+                  <span>
+                    <br>
+                      Sono molto entusiasta del percorso che ho intrapreso e trovo il corso estremamente costruttivo e coinvolgente. <br>
+                      Inizialmente ho acquisito competenze solide sui linguaggi di programmazione, comprendendo a fondo la complessità e l'efficienza degli algoritmi e studiando come possano essere ottimizzati per ottenere le migliori prestazioni. <br>
+                      Ho poi approfondito le basi dei componenti hardware e software dei computer, scoprendo i fondamenti dell'architettura informatica. <br>
+                      Con il passare del tempo, ho esteso le mie conoscenze su argomenti più avanzati, tra cui le basi di dati, la logica algebrica e i sistemi, comprendendo il ciclo di vita dei dati e le strutture su cui si fondano i sistemi complessi. <br><br>
+                      Non vedo l'ora di affrontare nuove sfide in questo ambito e di continuare a crescere come futuro ingegnere del software, puntando a contribuire a progetti di grande impatto. <br>
+                  </span>
+                  <br>
+                  <img src="../img/location-pin.png" alt="" style="height: 12px; width: 12px; margin-top: 5px;"><span class="location"> Roma, Italia </span>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="col1">
+                  <strong>Carlo e Nello Rosselli</strong> <br>
+                  <spam class="date">Settembre 2016 - Giugno 2021</spam> 
+                </td>
+                <td class="col2">
+                  <strong>Superiori - IT (Articolazione Informatica) - 100/100</strong>
+                  <br>
+                  <span>
+                    <br>
+                    Mi sono diplomato alle scuole superiori con il massimo dei voti, ottenendo 100/100. <br>
+                    Durante il mio percorso di studi, ho sviluppato un forte interesse per la programmazione, accompagnato da una passione per lo studio dei sistemi e delle reti, la matematica e la storia. <br>
+                    Queste materie non solo mi hanno permesso di costruire una solida base di competenze, ma mi hanno anche insegnato a pensare in modo critico e analitico. <br>
+                    Già dal terzo anno, ho scoperto che la programmazione era la mia vera passione: mi affascinava l’idea di risolvere problemi complessi sviluppando algoritmi efficaci e soluzioni innovative. <br>
+                    Questo approccio mi ha fatto vedere la programmazione come un vero e proprio gioco intellettuale, in cui il divertimento e la sfida risiedono nel trovare la strada più elegante e ottimizzata per risolvere qualsiasi problema. <br>
+                    Da allora, questa passione non ha fatto altro che crescere, spingendomi ad approfondire sempre di più le mie conoscenze e a cercare costantemente nuove sfide. <br>
+                  </span> 
+                  <br>
+                  <img src="../img/location-pin.png" alt="" style="height: 12px; width: 12px; margin-top: 5px;"><span class="location"> Aprilia, Italia</span> 
+                </td>
+              </tr>
+            </table>
+          </section>
+          
+          <section id="skills" class="hidden">
+            <h1 style="color:maroon">Competenze</h1>
+            <blockquote>
+              <p>“I due giorni più importanti della tua vita sono: il giorno in cui nasci, ed il giorno in cui capisci il perché.” <br> - Mark Twain</p>
+            </blockquote>
+            <ul>
+                <h3 style="color:darkred;">Linguaggi di programmazione</h3>
+                <li style="height: 21px;">
+                  <span>Python </span>
+                  <img class="star4" src="../img/4 stars.png" alt="">
+                </li>
+                <li style="height: 21px;">
+                  <span> Java </span>
+                 <img class="star4" src="../img/4 stars.png" alt="">
+                </li>
+                <li style="height: 21px;">
+                  <span>C++</span>
+                  <img class="star4" src="../img/4 stars.png" alt=""> 
+                </li>
+                <li>
+                  <span>C#</span>
+                  <img class="star3" src="../img/3 stars.png" alt="">
+                </li>                  
+                <li>
+                  <span>HTML</span>
+                  <img class="star3" src="../img/3 stars.png" alt="">
+                </li>
+                <li>
+                  <span>CSS</span>
+                  <img class="star2" src="../img/2 stars.png" alt="">
+                </li>
+                <li>
+                  <span>SQL</span>
+                  <img class="star2" src="../img/2 stars.png" alt="" >
+                </li>
+                <li>
+                  <span>PHP</span>
+                  <img class="star" src="../img/1 stars.png" alt="" >
+                </li>
+                <li>
+                  <span>Javascript</span>
+                  <img class="star" src="../img/1 stars.png" alt="" >
+                </li>
+            </ul>
+            <br>
+            <ul>
+              <h3 style="color:darkred;">Lingue</h3>
+              <li>
+                <span>Italiano (Madrelingua)</span>
+                  <img class="star5" src="../img/5 stars.png" alt="">
+              </li>
+              <li>
+                  <span>Inglese (B2)</span>
+                  <img class="star3" src="../img/3 stars.png" alt="">                    
+              </li>
+            </ul>
+            <br>
+            <ul>
+                <h3 style="color:darkred;">Strumenti</h3>
+                <li>
+                  <span>Visual Studio Code</span> 
+                  <img class="star4" src="../img/4 stars.png" alt="">
+                </li>
+                <li>
+                  <span>GitHub</span>
+                  <img class="star4" src="../img/4 stars.png" alt="">
+                </li>
+                <li>
+                  <span>ChatGPT</span>
+                  <img class="star4" src="../img/4 stars.png" alt="">
+                </li>
+                <li>
+                  <span>MS Office</span>
+                  <img class="star3" src="../img/3 stars.png" alt="">
+                </li>                  
+                <li>
+                  <span>Adobe Photoshop</span>
+                  <img class="star2" src="../img/2 stars.png" alt="">
+                </li>
+            </ul>
+          </section>
+
+          <section id = "contacts" class="hidden">
+            <h2 id="contact--">Se vuoi contattarmi:  <a name="contact"></a></h2>
+            <blockquote>
+              <p>Se mi scrivi una e-mail, oppure mi mandi un messaggio su whatsapp, risponderò il prima possibile.</p>
+            </blockquote>
+            <p>
+                <br><br>
+                &nbsp;E-mail personale : <a href="mailto:luigi.dannibale02@gmail.com">luigi.dannibale02@gmail.com</a><br>
+                &nbsp;E-mail studentesca Sapienza: <a href="mailto:dannibale.1991254@studenti.uniroma1.it">dannibale.1991254@studenti.uniroma1.it</a> <br>
+                &nbsp;Whatsapp : <a href="https://wa.me/393317626937">+39 331-7626937</a><br>
+                &nbsp;Numero di cellulare: <a href="tel:+393317626937">+39 331-7626937</a><br>
+            </p>
+          </section>
+
         </div>
         
         <script src="./docs/scale.fix.js"></script>
         <script src="./docs/scripts.js"></script>      
+        <script src="./docs/age.js"></script>  
+        <script src="./docs/pagechanger.js"></script>
     </body>
 </html>
