@@ -1,10 +1,3 @@
-/*
-<!--
-  Website on Luigi D'annibale, developed by Luigi D'annibale, to advertise Luigi D'annibale.
-  Version 1.0, first developed in March/2021
---> 
-*/
-
 // Data di nascita
 const birthDate = new Date("2002-12-16");
 const today = new Date();
@@ -45,18 +38,40 @@ function onResize(){
 
 function showSection(sectionId) {
   // Array of section IDs
-  const sections =  ["welcome", "education", "contacts", "skills"]
+  const sections =  ["welcome", "education", "contacts", "skills","projects"]
   
   // Hide all sections
   sections.forEach(el => {
       document.getElementById(el).classList.add('hidden');
   });
   
-  // document.getElementById("welcome").classList.add('hidden');
-  // document.getElementById("education").classList.add('hidden');
-  // document.getElementById("contacts").classList.add('hidden');
-  // document.getElementById("skills").classList.add('hidden');
   // Show the selected section
   document.getElementById(sectionId).classList.remove('hidden');
   sessionStorage.setItem("currentSection",sectionId);
+}
+
+var metas = document.getElementsByTagName('meta'),
+changeViewportContent = function(content) {
+    for (var i = 0; i < metas.length; i++) {
+        if (metas[i].name == "viewport") {
+            metas[i].content = content;
+        }
+    }
+},
+initialize = function() {
+    changeViewportContent("width=device-width, minimum-scale=1.0, maximum-scale=1.0");
+},
+gestureStart = function() {
+    changeViewportContent("width=device-width, minimum-scale=0.25, maximum-scale=1.6");
+},
+gestureEnd = function() {
+    initialize();
+};
+
+
+if (navigator.userAgent.match(/iPhone/i)) {
+initialize();
+
+document.addEventListener("touchstart", gestureStart, false);
+document.addEventListener("touchend", gestureEnd, false);
 }
